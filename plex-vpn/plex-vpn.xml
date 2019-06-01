@@ -80,12 +80,12 @@
 
     <Data>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>/mnt/user/appdata/config</HostDir>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>/mnt/user/appdata/config</HostDir>
             <ContainerDir>/transcode</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
@@ -95,7 +95,7 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>/mnt/user/appdata/config</HostDir>
             <ContainerDir>/etc/openvpn</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
