@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Name Default="Ubuntu-openvpn-client">Ubuntu-openvpn-client</Name>
+    <Overview>Ubuntu base image with openvpn install</Overview>
+    <Registry>https://cloud.docker.com/repository/docker/nanouke/ubuntu-openvpn-client</Registry>
+    <Repository>nanouke/ubuntu-openvpn-client</Repository>
+    <Privileged>true</Privileged>
+
+    <BindTime>true</BindTime>
+
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish/>
+    </Networking>
+
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/config</HostDir>
+            <ContainerDir>/config</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Icon>https://raw.githubusercontent.com/plexinc/pms-docker/master/img/plex-server.png</Icon>
+    <ExtraParams></ExtraParams>
+</Container>
