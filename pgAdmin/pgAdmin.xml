@@ -19,7 +19,7 @@
         </Variable>
         <Variable>
             <Name>PGADMIN_ENABLE_TLS</Name>
-            <Value>false</Value>
+            <Value></Value>
         </Variable>
         <Variable>
             <Name>PGADMIN_LISTEN_PORT</Name>
