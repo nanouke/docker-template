@@ -44,12 +44,12 @@
 
     <Data>
         <Volume>
-            <HostDir>/mnt/user/appdata/pgadmin</HostDir>
+            <HostDir>/mnt/user/appdata/config</HostDir>
             <ContainerDir>/var/lib/pgadmin</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir>/mnt/user/appdata/pgadmin/certs</HostDir>
+            <HostDir>/mnt/user/appdata/config/certs</HostDir>
             <ContainerDir>/certs/</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
