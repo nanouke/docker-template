@@ -5,7 +5,7 @@
     <Registry>https://cloud.docker.com/repository/docker/nanouke/owncloud-smb</Registry>
     <Repository>nanouke/owncloud-smb</Repository>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
-    <Icon></Icon>
+    <Icon>https://raw.githubusercontent.com/nanouke/docker-template/master/owncloud-smb/owncloud-logo.png</Icon>
 
     <Privileged>false</Privileged>
 
