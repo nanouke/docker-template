@@ -5,7 +5,7 @@
     <Registry>https://hub.docker.com/r/owncloud/server</Registry>
     <Repository>owncloud/server</Repository>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
-    <Icon>https://raw.githubusercontent.com/nanouke/docker-template/master/owncloud-smb/owncloud-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/nanouke/docker-template/master/owncloud/owncloud-logo.png</Icon>
 
     <Privileged>false</Privileged>
 
