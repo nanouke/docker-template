@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Name Default="owncloud-server">owncloud-server</Name>
+    <Overview>Instance of owncloud server</Overview>
+    <Registry>https://hub.docker.com/r/owncloud/server</Registry>
+    <Repository>owncloud/server</Repository>
+    <WebUI>http://[IP]:[PORT:8080]</WebUI>
+    <Icon>https://raw.githubusercontent.com/nanouke/docker-template/master/owncloud-smb/owncloud-logo.png</Icon>
+
+    <Privileged>false</Privileged>
+
+    <BindTime>true</BindTime>
+
+    <Environment>
+        <Variable>
+            <Name>OWNCLOUD_VERSION</Name>
+            <Value>latest</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_DOMAIN</Name>
+            <Value>localhost</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_ADMIN_USERNAME</Name>
+            <Value>admin</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_ADMIN_PASSWORD</Name>
+            <Value>admin</Value>
+        </Variable>
+        <!-- Database -->
+        <Variable>
+            <Name>OWNCLOUD_DB_TYPE</Name>
+            <Value>mysql</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_DB_HOST</Name>
+            <Value></Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_DB_NAME</Name>
+            <Value>owncloud</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_DB_USERNAME</Name>
+            <Value>owncloud</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_DB_PASSWORD</Name>
+            <Value>owncloud</Value>
+        </Variable>
+        <Variable>
+            <Name>OWNCLOUD_MYSQL_UTF8MB4</Name>
+            <Value>true</Value>
+        </Variable>
+        <!-- Redis -->
+         <Variable>
+            <Name>OWNCLOUD_REDIS_ENABLED</Name>
+            <Value>true</Value>
+        </Variable>
+         <Variable>
+            <Name>OWNCLOUD_REDIS_HOST</Name>
+            <Value></Value>
+        </Variable>
+    </Environment>
+
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>8080</HostPort>
+                <ContainerPort>8080</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/Owncloud/</HostDir>
+            <ContainerDir>/mnt/data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+</Container>
